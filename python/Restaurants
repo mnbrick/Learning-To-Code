@@ -1,0 +1,29 @@
+#creating objects to categorize my favorite Restaurants
+
+class Restaurant:
+  pass
+
+bobs_burgers = Restaurant()
+bobs_burgers.name = 'Bob\'s Burgers'
+bobs_burgers.category = 'American Diner'
+bobs_burgers.rating = 4.7
+bobs_burgers.delivery = False
+
+dirty_taco = Restaurant()
+dirty_taco.name = "Dirty Taco"
+dirty_taco.category = "New Mexican"
+dirty_taco.rating = 5.0
+dirty_taco.delivery = False
+
+greek_xpress = Restaurant()
+greek_xpress.name = "Greek Xpress"
+greek_xpress.category = "Greek"
+greek_xpress.rating = 5.0
+greek_xpress.delivery = True
+
+# Put all restaurants in a list
+restaurants = [bobs_burgers, dirty_taco, greek_xpress]
+
+# Loop through and print their attributes
+for place in restaurants:
+    print(vars(place))
