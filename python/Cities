@@ -1,0 +1,16 @@
+# Make a city class with __init__() method for 3 cities
+
+class City:
+  def __init__(self, name, country, population, landmarks):
+    self.country = country
+    self.population = population
+    self.landmarks = landmarks
+
+woodbury = City('Woodbury', 'America', 9270, 'Oheeka Castle')
+las_vegas = City('Las Vegas', 'America', 670352, 'Casinos')
+paros = City('Paros', 'Greece', 14000, 'Church of 100 Doors' )
+
+city = [woodbury, las_vegas, paros]
+
+for x in city:
+  print(vars(x))
