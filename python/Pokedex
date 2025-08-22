@@ -1,0 +1,36 @@
+# Creating a Pokedex to catalog knowledge about  Pokemon
+
+class Pokemon:
+  def __init__(self, entry, name, types, description, is_caught):
+   self.entry = entry
+   self.name = name
+   self.types = types
+   self.description = description
+   self.is_caught = is_caught
+
+# .speak() that prints a string of the sound a Pokémon makes.
+  def speak(self):
+     print(self.name + " " + self.name)
+
+# create a instance method called .display_details() that prints the attributes of a Pokemon object
+  def display_details(self):
+    print("Entry Number: " + str(self.entry))
+    print("Name: " + self.name)
+    print("Type: " + self.types)
+    print("Description: " + self.description)
+    if self.is_caught:
+      print(self.name + " has been caught")
+    else:
+      print(self.name + " has not been caught")
+
+# create three Pokemon class objects and use the .speak() or .display_details() instance methods for each one
+Pikachu = Pokemon(25, "Pikachu", "Electric", "Small mouse Pokemon", True)
+Sylveon = Pokemon(700, "Sylveon", "Fairy Type", "The ribbon Pokemon", True)
+Mew = Pokemon(151, "Mew", "Psychic", "The power Pokemon. It knows every move!", False)
+
+Pikachu.speak()
+Pikachu.display_details()
+Sylveon.speak()
+Sylveon.display_details()
+Mew.speak()
+Mew.display_details()
